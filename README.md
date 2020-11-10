@@ -14,7 +14,15 @@ sinatra-cross_origin
 ```
 
 ## Getting started
+Run:
+```
+bundle install
+```
+
+
 This sample was generated with the [OpenAPI Generator](https://github.com/openapitools/openapi-generator) project.
+
+
 
 ```
 rackup -p 4567 config.ru
