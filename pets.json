@@ -1,10 +1,31 @@
 [
   {
+    "id": 1,
     "name": "dog",
-    "description": "my doggo"
+    "description": "my doggo",
+    "status": "alive",
+    "tags": [
+      "dog"
+    ]
   },
   {
+    "id": 2,
     "name": "cat",
-    "description": "fluffy cat"
+    "description": "fluffy cat",
+    "status": "alive",
+    "tags": [
+      "cat"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "catwolf",
+    "description": "fluffy cat",
+    "status": "unknown",
+    "tags": [
+      "dog",
+      "cat",
+      "hybrid"
+    ]
   }
 ]
