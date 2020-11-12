@@ -85,4 +85,3 @@ MyApp.add_route('POST', '/v2/store/order', {
 
   {"message" => "yes, it worked"}.to_json
 end
-
