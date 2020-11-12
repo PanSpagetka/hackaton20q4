@@ -2,6 +2,10 @@ require './lib/openapiing'
 
 # only need to extend if you want special configuration!
 class MyApp < OpenAPIing
+    before do
+    content_type 'application/json'
+  end
+
   self.configure do |config|
     config.api_version = '1.0.0' 
   end

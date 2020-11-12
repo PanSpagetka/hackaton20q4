@@ -3,7 +3,7 @@
     "id": 1,
     "name": "dog",
     "description": "my doggo",
-    "status": "alive",
+    "status": "available",
     "tags": [
       "dog"
     ]
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "cat",
     "description": "fluffy cat",
-    "status": "alive",
+    "status": "available",
     "tags": [
       "cat"
     ]
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "catwolf",
     "description": "fluffy cat",
-    "status": "unknown",
+    "status": "sold",
     "tags": [
       "dog",
       "cat",

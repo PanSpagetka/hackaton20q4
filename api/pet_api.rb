@@ -5,8 +5,8 @@ class PetController
     attr_accessor :current_id
 
     def add_new(params)
-      new = load_pets
-      new.append(
+      newPets = load_pets
+      newPets.append(
         Pet.new(
           self.current_id, 
           params['name'], 
@@ -15,7 +15,7 @@ class PetController
           params['tags']
         )
       )
-      save_pets(new.to_json)
+      save_pets(newPets.to_json)
       self.current_id += 1
     end
 
@@ -25,7 +25,7 @@ class PetController
 
     #Returns all pets having status included in status array
     def find_by_status(status)
-      load_pets.select { |pet| status.include?(pet.status) }
+      load_pets.select { |pet| (status["0"] || status).include?(pet.status) }
     end
 
     #Returns all pets containing all of the tags
@@ -200,7 +200,7 @@ MyApp.add_route('GET', '/v2/pet/findByStatus', {
   cross_origin
   # the guts live here
 
-  {"message" => PetController.find_by_status(params)}.to_json
+  PetController.find_by_status(params["status"]).to_json
 end
 
 

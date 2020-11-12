@@ -11,7 +11,7 @@ externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
 servers:
-- url: http://petstore.swagger.io/v2
+- url: http://localhost:3001/v2/
 tags:
 - description: Everything about your Pets
   name: pet
